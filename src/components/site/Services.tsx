@@ -7,7 +7,7 @@ const services = [
   { icon: Snowflake, title: "Serwis klimatyzacji", desc: "Nabijanie, odgrzybianie i pełna obsługa układów chłodzenia kabiny." },
   { icon: Disc, title: "Hamulce i zawieszenie", desc: "Diagnostyka, regeneracja i wymiana podzespołów odpowiedzialnych za bezpieczeństwo." },
   { icon: Package, title: "Części samochodowe", desc: "Sklep z częściami markowych producentów — dostępne od ręki." },
-  { icon: CircleDot, title: "Montaż opon", desc: "Sezonowa wymiana, wyważanie i fachowy montaż kół." },
+  { icon: CircleDot, title: "Opony", desc: "Zapewniamy montaż." },
   { icon: ClipboardCheck, title: "Przeglądy techniczne", desc: "Kompleksowe przygotowanie auta do każdego rodzaju badania." },
   { icon: ShieldCheck, title: "Stacja Kontroli Pojazdów", desc: "Okręgowa SKP — pełen zakres badań na nowoczesnym sprzęcie." },
 ];
