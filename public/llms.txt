@@ -1,0 +1,14 @@
+# OLMED Łęczna
+
+> Rodzinny serwis samochodowy, sklep z częściami i Okręgowa Stacja Kontroli Pojazdów w Łęcznej. 25 lat doświadczenia. Partner O.K. Serwis, ELF i ORLEN.
+
+OLMED Piotr i Radosław Medyńscy prowadzi dwa oddziały w Łęcznej:
+- Serwis i sklep — Rynek II 17, tel. 81 752 16 44, pn–pt 7:00–17:00, sob 7:00–14:00
+- Okręgowa Stacja Kontroli Pojazdów — Krasnystawska 54, tel. 518 518 315, pn–pt 7:00–19:00, sob 7:00–14:00
+
+Zakres usług: mechanika pojazdowa, diagnostyka komputerowa, klimatyzacja, opony i wymiana, części samochodowe, oleje i płyny eksploatacyjne, badania techniczne pojazdów osobowych, dostawczych i z instalacją gazową.
+
+## Pages
+
+- [Strona główna](/): o firmie, usługi, OSKP, partnerzy, galeria i kontakt
+- [Sitemap](/sitemap.xml): lista wszystkich publicznych adresów
