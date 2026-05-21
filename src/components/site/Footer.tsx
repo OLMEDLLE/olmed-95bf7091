@@ -34,9 +34,9 @@ export function Footer() {
           <div>
             <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-5">Serwis</div>
             <div className="space-y-3 text-sm">
-              <a href="tel:+48817521644" className="flex items-center gap-2 hover:text-primary transition"><Phone className="size-3.5 text-primary" /> 81 752 16 44</a>
-              <a href="mailto:olmedok@wp.pl" className="flex items-center gap-2 hover:text-primary transition"><Mail className="size-3.5 text-primary" /> olmedok@wp.pl</a>
-              <div className="flex items-start gap-2 text-muted-foreground"><MapPin className="size-3.5 text-primary mt-0.5" /> Rynek II 17, Łęczna</div>
+              <a href="tel:+48817521644" className="flex items-center gap-2 hover:text-primary transition"><Phone className="size-3.5 text-primary" /><span>81 752 16 44</span></a>
+              <a href="mailto:olmedok@wp.pl" className="flex items-center gap-2 hover:text-primary transition"><Mail className="size-3.5 text-primary" /><span>olmedok@wp.pl</span></a>
+              <div className="flex items-start gap-2 text-muted-foreground"><MapPin className="size-3.5 text-primary mt-0.5" /><span>Rynek II 17, Łęczna</span></div>
               <div className="text-muted-foreground pl-5">Pn–Pt 7:00–17:00 · Sob 7:00–14:00</div>
             </div>
           </div>
@@ -44,8 +44,8 @@ export function Footer() {
           <div>
             <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-5">OSKP</div>
             <div className="space-y-3 text-sm">
-              <a href="tel:+48518518315" className="flex items-center gap-2 hover:text-primary transition"><Phone className="size-3.5 text-primary" /> 518 518 315</a>
-              <div className="flex items-start gap-2 text-muted-foreground"><MapPin className="size-3.5 text-primary mt-0.5" /> Krasnystawska 54, Łęczna</div>
+              <a href="tel:+48518518315" className="flex items-center gap-2 hover:text-primary transition"><Phone className="size-3.5 text-primary" /><span>518 518 315</span></a>
+              <div className="flex items-start gap-2 text-muted-foreground"><MapPin className="size-3.5 text-primary mt-0.5" /><span>Krasnystawska 54, Łęczna</span></div>
               <div className="text-muted-foreground pl-5">Pn–Pt 7:00–19:00 · Sob 7:00–14:00</div>
               <a href="https://www.facebook.com/share/1BTdg8p1nA/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-primary transition pt-2">
                 <Facebook className="size-3.5 text-primary" /> Facebook
