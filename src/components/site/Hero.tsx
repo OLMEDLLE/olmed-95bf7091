@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section id="top" className="relative min-h-[100svh] overflow-hidden bg-hero">
       <div className="absolute inset-0">
-        <img src={facade} alt="Siedziba OLMED Łęczna" className="size-full object-cover opacity-40 animate-slow-zoom" />
+        <img src={facade} alt="Siedziba OLMED Łęczna" width={1920} height={1080} fetchPriority="high" decoding="async" className="size-full object-cover opacity-40 animate-slow-zoom" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/70 to-background" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,oklch(0.62_0.22_25/0.25),transparent_55%)]" />
       </div>
