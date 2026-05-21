@@ -84,6 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:description", content: "OLMED O.K. SERWIS ELF PIOTR I RADOSŁAW MEDYŃSCY" },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/B9prYLGlDNUICm0GB2gMEWdBdcI2/social-images/social-1779396658304-OLMED.webp" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/B9prYLGlDNUICm0GB2gMEWdBdcI2/social-images/social-1779396658304-OLMED.webp" },
+      { name: "google-site-verification", content: "y5BD1SU5DdmLoYI4md2Pr28mYQ6-B_R2x_TwyhePZUA" },
     ],
     links: [
       {
