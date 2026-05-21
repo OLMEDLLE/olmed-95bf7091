@@ -1,7 +1,7 @@
 import { ArrowRight, Phone } from "lucide-react";
 import facade from "@/assets/olmed-facade.jpeg";
 import logoOk from "@/assets/logo-ok-serwis.png";
-import logoElf from "@/assets/logo-elf.png";
+import logoElf from "@/assets/logo-elf.svg";
 import logoOrlen from "@/assets/logo-orlen.jpg";
 
 export function Hero() {
@@ -50,7 +50,7 @@ export function Hero() {
           <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-6">Zaufali nam · Oficjalni partnerzy</div>
           <div className="flex flex-wrap items-center gap-x-10 gap-y-6">
             <img src={logoOk} alt="O.K. Serwis" className="h-14 w-14 rounded object-cover" />
-            <img src={logoElf} alt="ELF" className="h-10 object-contain bg-white rounded px-3 py-1.5" />
+            <img src={logoElf} alt="ELF" className="h-10 object-contain bg-white rounded px-3 py-2" />
             <img src={logoOrlen} alt="ORLEN" className="h-12 object-contain rounded" />
           </div>
         </div>
