@@ -1,5 +1,5 @@
 import logoOk from "@/assets/logo-ok-serwis.png";
-import logoElf from "@/assets/logo-elf.png";
+import logoElf from "@/assets/logo-elf.svg";
 import logoOrlen from "@/assets/logo-orlen.jpg";
 
 export function Partners() {

@@ -1,7 +1,7 @@
 import { Phone, Mail, MapPin, Facebook } from "lucide-react";
 import logoOlmed from "@/assets/logo-olmed.png";
 import logoOk from "@/assets/logo-ok-serwis.png";
-import logoElf from "@/assets/logo-elf.png";
+import logoElf from "@/assets/logo-elf.svg";
 import logoOrlen from "@/assets/logo-orlen.jpg";
 
 export function Footer() {
@@ -25,7 +25,7 @@ export function Footer() {
               <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-4">Partnerzy</div>
               <div className="flex items-center gap-6">
                 <img src={logoOk} alt="O.K. Serwis" className="h-10 w-10 rounded object-cover" />
-                <img src={logoElf} alt="ELF" className="h-7 bg-white rounded px-2 py-1 object-contain" />
+                <img src={logoElf} alt="ELF" className="h-7 bg-white rounded px-2 py-1.5 object-contain" />
                 <img src={logoOrlen} alt="ORLEN" className="h-9 object-contain rounded" />
               </div>
             </div>
