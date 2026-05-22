@@ -125,6 +125,7 @@ function Index() {
         <Partners />
         <Gallery />
         <Reviews />
+        <Faq />
         <Contact />
       </main>
       <Footer />
