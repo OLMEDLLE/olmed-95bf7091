@@ -7,7 +7,7 @@ import { Oskp } from "@/components/site/Oskp";
 import { WhyUs } from "@/components/site/WhyUs";
 import { Partners } from "@/components/site/Partners";
 import { Gallery } from "@/components/site/Gallery";
-import { Reviews } from "@/components/site/Reviews";
+import { Reviews, reviews } from "@/components/site/Reviews";
 import { Faq, faqItems } from "@/components/site/Faq";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -104,6 +104,25 @@ export const Route = createFileRoute("/")({
                 { "@type": "ListItem", position: 3, name: "OSKP", item: "https://olmed.lovable.app/#oskp" },
                 { "@type": "ListItem", position: 4, name: "Kontakt", item: "https://olmed.lovable.app/#kontakt" },
               ],
+            },
+            {
+              "@type": "LocalBusiness",
+              "@id": "https://olmed.lovable.app/#reviews",
+              name: "OLMED Łęczna",
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: (reviews.reduce((s, r) => s + r.rating, 0) / reviews.length).toFixed(1),
+                reviewCount: reviews.length,
+                bestRating: 5,
+                worstRating: 1,
+              },
+              review: reviews.map((r) => ({
+                "@type": "Review",
+                author: { "@type": "Person", name: r.name },
+                datePublished: r.date,
+                reviewBody: r.text,
+                reviewRating: { "@type": "Rating", ratingValue: r.rating, bestRating: 5, worstRating: 1 },
+              })),
             },
           ],
         }),
