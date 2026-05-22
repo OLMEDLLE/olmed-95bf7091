@@ -7,7 +7,7 @@ import { Oskp } from "@/components/site/Oskp";
 import { WhyUs } from "@/components/site/WhyUs";
 import { Partners } from "@/components/site/Partners";
 import { Gallery } from "@/components/site/Gallery";
-import { Reviews } from "@/components/site/Reviews";
+import { Reviews, reviews } from "@/components/site/Reviews";
 import { Faq, faqItems } from "@/components/site/Faq";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
