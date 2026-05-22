@@ -8,6 +8,7 @@ import { WhyUs } from "@/components/site/WhyUs";
 import { Partners } from "@/components/site/Partners";
 import { Gallery } from "@/components/site/Gallery";
 import { Reviews } from "@/components/site/Reviews";
+import { Faq, faqItems } from "@/components/site/Faq";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
@@ -86,6 +87,24 @@ export const Route = createFileRoute("/")({
               ],
               parentOrganization: { "@id": "https://olmed.lovable.app/#organization" },
             },
+            {
+              "@type": "FAQPage",
+              "@id": "https://olmed.lovable.app/#faq",
+              mainEntity: faqItems.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Strona główna", item: "https://olmed.lovable.app/" },
+                { "@type": "ListItem", position: 2, name: "Usługi", item: "https://olmed.lovable.app/#uslugi" },
+                { "@type": "ListItem", position: 3, name: "OSKP", item: "https://olmed.lovable.app/#oskp" },
+                { "@type": "ListItem", position: 4, name: "Kontakt", item: "https://olmed.lovable.app/#kontakt" },
+              ],
+            },
           ],
         }),
       },
@@ -106,6 +125,7 @@ function Index() {
         <Partners />
         <Gallery />
         <Reviews />
+        <Faq />
         <Contact />
       </main>
       <Footer />
