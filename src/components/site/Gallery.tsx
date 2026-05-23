@@ -2,10 +2,14 @@ import facade from "@/assets/olmed-facade.jpeg";
 import entrance from "@/assets/olmed-entrance.jpg";
 import street from "@/assets/olmed-street.jpg";
 import oskp from "@/assets/oskp-building.png";
+import certyfikaty from "@/assets/certyfikaty.jpeg";
+import sklep from "@/assets/sklep-czesci.jpeg";
 
 const items = [
   { src: facade, alt: "Wejście do OLMED", label: "Oddział Rynek II" },
   { src: oskp, alt: "Stacja Kontroli Pojazdów", label: "OSKP Krasnystawska" },
+  { src: sklep, alt: "Wnętrze sklepu z częściami OLMED", label: "Sklep z częściami" },
+  { src: certyfikaty, alt: "Certyfikaty i wyróżnienia OLMED", label: "Certyfikaty" },
   { src: entrance, alt: "Wejście do serwisu", label: "Serwis" },
   { src: street, alt: "Budynek OLMED od ulicy", label: "Łęczna" },
 ];

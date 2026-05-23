@@ -7,7 +7,7 @@ import { Oskp } from "@/components/site/Oskp";
 import { WhyUs } from "@/components/site/WhyUs";
 import { Partners } from "@/components/site/Partners";
 import { Gallery } from "@/components/site/Gallery";
-import { Reviews, reviews } from "@/components/site/Reviews";
+import { Reviews, reviews, AGGREGATE_RATING, AGGREGATE_REVIEW_COUNT } from "@/components/site/Reviews";
 import { Faq, faqItems } from "@/components/site/Faq";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -111,8 +111,8 @@ export const Route = createFileRoute("/")({
               name: "OLMED Łęczna",
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: (reviews.reduce((s, r) => s + r.rating, 0) / reviews.length).toFixed(1),
-                reviewCount: reviews.length,
+                ratingValue: AGGREGATE_RATING.toFixed(1),
+                reviewCount: AGGREGATE_REVIEW_COUNT,
                 bestRating: 5,
                 worstRating: 1,
               },

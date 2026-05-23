@@ -82,9 +82,12 @@ function initials(name: string) {
   return clean.charAt(0).toUpperCase() || "?";
 }
 
+export const AGGREGATE_RATING = 4.1;
+export const AGGREGATE_REVIEW_COUNT = 243;
+
 export function Reviews() {
-  const total = reviews.length;
-  const avg = reviews.reduce((s, r) => s + r.rating, 0) / total;
+  const total = AGGREGATE_REVIEW_COUNT;
+  const avg = AGGREGATE_RATING;
   const avgStr = avg.toFixed(1).replace(".", ",");
 
   return (
