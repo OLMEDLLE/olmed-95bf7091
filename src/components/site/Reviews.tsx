@@ -83,7 +83,7 @@ function initials(name: string) {
 }
 
 export const AGGREGATE_RATING = 4.1;
-export const AGGREGATE_REVIEW_COUNT = 243;
+export const AGGREGATE_REVIEW_COUNT = 193;
 
 export function Reviews() {
   const total = AGGREGATE_REVIEW_COUNT;
