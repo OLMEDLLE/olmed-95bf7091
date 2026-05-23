@@ -1,4 +1,5 @@
-import { Wrench, Cpu, Droplet, Snowflake, Disc, Package, CircleDot, ClipboardCheck, ShieldCheck } from "lucide-react";
+import { Wrench, Cpu, Droplet, Snowflake, Disc, Package, CircleDot, ClipboardCheck, ShieldCheck, Truck, Phone } from "lucide-react";
+import pomocDrogowa from "@/assets/pomoc-drogowa.jpeg";
 
 const services = [
   { icon: Wrench, title: "Mechanika pojazdowa", desc: "Naprawy bieżące, kapitalne i awaryjne — z dbałością o każdy detal." },
@@ -8,6 +9,7 @@ const services = [
   { icon: Disc, title: "Hamulce i zawieszenie", desc: "Diagnostyka, regeneracja i wymiana podzespołów odpowiedzialnych za bezpieczeństwo." },
   { icon: Package, title: "Części samochodowe", desc: "Sklep z częściami markowych producentów — dostępne od ręki." },
   { icon: CircleDot, title: "Opony", desc: "Zapewniamy montaż." },
+  { icon: Truck, title: "Pomoc drogowa", desc: "Holowanie i transport pojazdów — szybka reakcja na terenie Łęcznej i okolic." },
   { icon: ClipboardCheck, title: "Przeglądy techniczne", desc: "Kompleksowe przygotowanie auta do każdego rodzaju badania." },
   { icon: ShieldCheck, title: "Stacja Kontroli Pojazdów", desc: "Okręgowa SKP — pełen zakres badań na nowoczesnym sprzęcie." },
 ];
