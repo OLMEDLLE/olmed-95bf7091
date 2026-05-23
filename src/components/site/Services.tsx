@@ -46,6 +46,38 @@ export function Services() {
             </div>
           ))}
         </div>
+
+        {/* Featured: Pomoc drogowa */}
+        <div className="mt-12 grid lg:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
+          <div className="relative aspect-[4/3] lg:aspect-auto bg-surface overflow-hidden">
+            <img
+              src={pomocDrogowa}
+              alt="Laweta OLMED — pomoc drogowa w Łęcznej"
+              loading="lazy"
+              className="size-full object-cover transition duration-700 hover:scale-105"
+            />
+            <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-background/90 backdrop-blur text-[10px] uppercase tracking-[0.25em] text-primary font-semibold border border-primary/30">
+              24/7 · Łęczna i okolice
+            </div>
+          </div>
+          <div className="bg-card p-8 lg:p-12 flex flex-col justify-center">
+            <div className="size-12 rounded-md bg-gradient-red/10 border border-primary/20 flex items-center justify-center mb-6">
+              <Truck className="size-5 text-primary" />
+            </div>
+            <h3 className="font-display text-2xl lg:text-3xl font-bold mb-3">Pomoc drogowa OLMED</h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Holowanie i transport pojazdów osobowych oraz dostawczych. Profesjonalna laweta, szybka reakcja
+              i pełna obsługa — od miejsca awarii bezpośrednio do naszego serwisu w Łęcznej.
+            </p>
+            <a
+              href="tel:+48817521644"
+              className="inline-flex items-center gap-2 self-start px-5 py-3 rounded-md bg-gradient-red text-primary-foreground text-sm font-semibold hover:opacity-90 transition"
+            >
+              <Phone className="size-4" />
+              Zadzwoń: 81 752 16 44
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
