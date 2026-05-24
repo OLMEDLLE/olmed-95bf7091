@@ -2,15 +2,19 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
+import { TopServices } from "@/components/site/TopServices";
 import { Services } from "@/components/site/Services";
 import { Oskp } from "@/components/site/Oskp";
 import { WhyUs } from "@/components/site/WhyUs";
+import { WhyOlmed } from "@/components/site/WhyOlmed";
 import { Partners } from "@/components/site/Partners";
 import { Gallery } from "@/components/site/Gallery";
 import { Reviews, reviews, AGGREGATE_RATING, AGGREGATE_REVIEW_COUNT } from "@/components/site/Reviews";
 import { Faq, faqItems } from "@/components/site/Faq";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
+import { StickyMobileCta } from "@/components/site/StickyMobileCta";
+
 
 export const Route = createFileRoute("/")({
   component: Index,
