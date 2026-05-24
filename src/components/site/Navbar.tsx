@@ -67,13 +67,22 @@ export function Navbar() {
           </a>
 
           <nav className="hidden lg:flex items-center gap-8">
-            {links.map((l) => (
-              <a key={l.href} href={l.href} className="text-sm text-muted-foreground hover:text-foreground transition relative group">
-                {l.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary transition-all group-hover:w-full" />
-              </a>
-            ))}
+            {links.map((l) => {
+              const className = "text-sm text-muted-foreground hover:text-foreground transition relative group";
+              const inner = (
+                <>
+                  {l.label}
+                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary transition-all group-hover:w-full" />
+                </>
+              );
+              return "to" in l ? (
+                <Link key={l.to} to={l.to} className={className}>{inner}</Link>
+              ) : (
+                <a key={l.href} href={l.href} className={className}>{inner}</a>
+              );
+            })}
           </nav>
+
 
           <div className="flex items-center gap-3">
             <a
