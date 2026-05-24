@@ -137,14 +137,16 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground pb-24 lg:pb-0">
       <Navbar />
       <main>
         <Hero />
+        <TopServices />
         <About />
         <Services />
         <Oskp />
         <WhyUs />
+        <WhyOlmed />
         <Partners />
         <Gallery />
         <Reviews />
@@ -152,6 +154,8 @@ function Index() {
         <Contact />
       </main>
       <Footer />
+      <StickyMobileCta />
     </div>
+
   );
 }
