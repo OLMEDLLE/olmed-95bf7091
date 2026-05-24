@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { Phone, MapPin, Facebook, Menu, X } from "lucide-react";
 import logoOlmed from "@/assets/logo-olmed.png";
 
 const links = [
-  { href: "#o-firmie", label: "O firmie" },
-  { href: "#uslugi", label: "Usługi" },
-  { href: "#oskp", label: "OSKP" },
-  { href: "#partnerzy", label: "Partnerzy" },
-  { href: "#galeria", label: "Galeria" },
-  { href: "#kontakt", label: "Kontakt" },
-];
+  { to: "/mechanik-leczna", label: "Mechanik" },
+  { to: "/klimatyzacja-leczna", label: "Klimatyzacja" },
+  { to: "/serwis-auta-leczna", label: "Serwis auta" },
+  { to: "/stacja-kontroli-pojazdow-leczna", label: "OSKP" },
+  { href: "/#kontakt", label: "Kontakt" },
+] as const;
+
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -66,13 +67,22 @@ export function Navbar() {
           </a>
 
           <nav className="hidden lg:flex items-center gap-8">
-            {links.map((l) => (
-              <a key={l.href} href={l.href} className="text-sm text-muted-foreground hover:text-foreground transition relative group">
-                {l.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary transition-all group-hover:w-full" />
-              </a>
-            ))}
+            {links.map((l) => {
+              const className = "text-sm text-muted-foreground hover:text-foreground transition relative group";
+              const inner = (
+                <>
+                  {l.label}
+                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary transition-all group-hover:w-full" />
+                </>
+              );
+              return "to" in l ? (
+                <Link key={l.to} to={l.to} className={className}>{inner}</Link>
+              ) : (
+                <a key={l.href} href={l.href} className={className}>{inner}</a>
+              );
+            })}
           </nav>
+
 
           <div className="flex items-center gap-3">
             <a
@@ -94,11 +104,18 @@ export function Navbar() {
         {open && (
           <div className="lg:hidden border-t border-border/60 bg-background/95 backdrop-blur-xl">
             <nav className="px-6 py-6 flex flex-col gap-4">
-              {links.map((l) => (
-                <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-base text-foreground/90">
-                  {l.label}
-                </a>
-              ))}
+              {links.map((l) =>
+                "to" in l ? (
+                  <Link key={l.to} to={l.to} onClick={() => setOpen(false)} className="text-base text-foreground/90">
+                    {l.label}
+                  </Link>
+                ) : (
+                  <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-base text-foreground/90">
+                    {l.label}
+                  </a>
+                ),
+              )}
+
               <a href="tel:+48817521644" className="mt-2 inline-flex items-center gap-2 bg-gradient-red text-primary-foreground px-5 py-3 rounded-md text-sm font-medium w-fit">
                 <Phone className="size-4" /> 81 752 16 44
               </a>

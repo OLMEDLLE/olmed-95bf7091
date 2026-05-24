@@ -20,8 +20,9 @@ export function Hero() {
           </div>
 
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] text-balance">
-            OLMED — <span className="block text-transparent bg-clip-text bg-gradient-to-r from-foreground via-foreground to-primary">nowoczesna motoryzacja</span> z 25-letnią historią
+            OLMED Łęczna — <span className="block text-transparent bg-clip-text bg-gradient-to-r from-foreground via-foreground to-primary">serwis samochodowy, klimatyzacja i OSKP</span>
           </h1>
+
 
           <p className="mt-8 text-lg lg:text-xl text-muted-foreground max-w-2xl leading-relaxed">
             Profesjonalny serwis, diagnostyka, części samochodowe i obsługa kierowców

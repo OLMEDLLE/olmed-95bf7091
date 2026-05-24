@@ -9,12 +9,37 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as StacjaKontroliPojazdowLecznaRouteImport } from './routes/stacja-kontroli-pojazdow-leczna'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SerwisAutaLecznaRouteImport } from './routes/serwis-auta-leczna'
+import { Route as MechanikLecznaRouteImport } from './routes/mechanik-leczna'
+import { Route as KlimatyzacjaLecznaRouteImport } from './routes/klimatyzacja-leczna'
 import { Route as IndexRouteImport } from './routes/index'
 
+const StacjaKontroliPojazdowLecznaRoute =
+  StacjaKontroliPojazdowLecznaRouteImport.update({
+    id: '/stacja-kontroli-pojazdow-leczna',
+    path: '/stacja-kontroli-pojazdow-leczna',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SerwisAutaLecznaRoute = SerwisAutaLecznaRouteImport.update({
+  id: '/serwis-auta-leczna',
+  path: '/serwis-auta-leczna',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MechanikLecznaRoute = MechanikLecznaRouteImport.update({
+  id: '/mechanik-leczna',
+  path: '/mechanik-leczna',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KlimatyzacjaLecznaRoute = KlimatyzacjaLecznaRouteImport.update({
+  id: '/klimatyzacja-leczna',
+  path: '/klimatyzacja-leczna',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -25,37 +50,100 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/klimatyzacja-leczna': typeof KlimatyzacjaLecznaRoute
+  '/mechanik-leczna': typeof MechanikLecznaRoute
+  '/serwis-auta-leczna': typeof SerwisAutaLecznaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/stacja-kontroli-pojazdow-leczna': typeof StacjaKontroliPojazdowLecznaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/klimatyzacja-leczna': typeof KlimatyzacjaLecznaRoute
+  '/mechanik-leczna': typeof MechanikLecznaRoute
+  '/serwis-auta-leczna': typeof SerwisAutaLecznaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/stacja-kontroli-pojazdow-leczna': typeof StacjaKontroliPojazdowLecznaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/klimatyzacja-leczna': typeof KlimatyzacjaLecznaRoute
+  '/mechanik-leczna': typeof MechanikLecznaRoute
+  '/serwis-auta-leczna': typeof SerwisAutaLecznaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/stacja-kontroli-pojazdow-leczna': typeof StacjaKontroliPojazdowLecznaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/sitemap.xml'
+  fullPaths:
+    | '/'
+    | '/klimatyzacja-leczna'
+    | '/mechanik-leczna'
+    | '/serwis-auta-leczna'
+    | '/sitemap.xml'
+    | '/stacja-kontroli-pojazdow-leczna'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/sitemap.xml'
-  id: '__root__' | '/' | '/sitemap.xml'
+  to:
+    | '/'
+    | '/klimatyzacja-leczna'
+    | '/mechanik-leczna'
+    | '/serwis-auta-leczna'
+    | '/sitemap.xml'
+    | '/stacja-kontroli-pojazdow-leczna'
+  id:
+    | '__root__'
+    | '/'
+    | '/klimatyzacja-leczna'
+    | '/mechanik-leczna'
+    | '/serwis-auta-leczna'
+    | '/sitemap.xml'
+    | '/stacja-kontroli-pojazdow-leczna'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  KlimatyzacjaLecznaRoute: typeof KlimatyzacjaLecznaRoute
+  MechanikLecznaRoute: typeof MechanikLecznaRoute
+  SerwisAutaLecznaRoute: typeof SerwisAutaLecznaRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  StacjaKontroliPojazdowLecznaRoute: typeof StacjaKontroliPojazdowLecznaRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/stacja-kontroli-pojazdow-leczna': {
+      id: '/stacja-kontroli-pojazdow-leczna'
+      path: '/stacja-kontroli-pojazdow-leczna'
+      fullPath: '/stacja-kontroli-pojazdow-leczna'
+      preLoaderRoute: typeof StacjaKontroliPojazdowLecznaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/serwis-auta-leczna': {
+      id: '/serwis-auta-leczna'
+      path: '/serwis-auta-leczna'
+      fullPath: '/serwis-auta-leczna'
+      preLoaderRoute: typeof SerwisAutaLecznaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mechanik-leczna': {
+      id: '/mechanik-leczna'
+      path: '/mechanik-leczna'
+      fullPath: '/mechanik-leczna'
+      preLoaderRoute: typeof MechanikLecznaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/klimatyzacja-leczna': {
+      id: '/klimatyzacja-leczna'
+      path: '/klimatyzacja-leczna'
+      fullPath: '/klimatyzacja-leczna'
+      preLoaderRoute: typeof KlimatyzacjaLecznaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -70,18 +158,12 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  KlimatyzacjaLecznaRoute: KlimatyzacjaLecznaRoute,
+  MechanikLecznaRoute: MechanikLecznaRoute,
+  SerwisAutaLecznaRoute: SerwisAutaLecznaRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  StacjaKontroliPojazdowLecznaRoute: StacjaKontroliPojazdowLecznaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
