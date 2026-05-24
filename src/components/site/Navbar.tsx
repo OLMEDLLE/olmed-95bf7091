@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { Phone, MapPin, Facebook, Menu, X } from "lucide-react";
 import logoOlmed from "@/assets/logo-olmed.png";
 
 const links = [
-  { href: "#o-firmie", label: "O firmie" },
-  { href: "#uslugi", label: "Usługi" },
-  { href: "#oskp", label: "OSKP" },
-  { href: "#partnerzy", label: "Partnerzy" },
-  { href: "#galeria", label: "Galeria" },
-  { href: "#kontakt", label: "Kontakt" },
-];
+  { to: "/mechanik-leczna", label: "Mechanik" },
+  { to: "/klimatyzacja-leczna", label: "Klimatyzacja" },
+  { to: "/serwis-auta-leczna", label: "Serwis auta" },
+  { to: "/stacja-kontroli-pojazdow-leczna", label: "OSKP" },
+  { href: "/#kontakt", label: "Kontakt" },
+] as const;
+
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
