@@ -84,9 +84,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "OLMED · Piotr i Radosław Medyńscy" },
       { name: "twitter:description", content: "OLMED Łęczna — rodzinny serwis samochodowy, sklep z częściami, klimatyzacja, opony i Okręgowa Stacja Kontroli Pojazdów. 25 lat doświadczenia, partner O.K. Serwis, ELF i ORLEN." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/B9prYLGlDNUICm0GB2gMEWdBdcI2/social-images/social-1779461146370-IMG_4105.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/B9prYLGlDNUICm0GB2gMEWdBdcI2/social-images/social-1779461146370-IMG_4105.webp" },
       { name: "google-site-verification", content: "_gCuTVR6M-yuJXF2JRVFJFE4YP9BhRw_dFfto9B3Wss" },
+      { name: "geo.region", content: "PL-LU" },
+      { name: "geo.placename", content: "Łęczna" },
+      { name: "geo.position", content: "51.3014;22.8806" },
+      { name: "ICBM", content: "51.3014, 22.8806" },
     ],
     links: [
       {
