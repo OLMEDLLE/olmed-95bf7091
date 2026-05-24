@@ -9,12 +9,19 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as StacjaKontroliPojazdowLecznaRouteImport } from './routes/stacja-kontroli-pojazdow-leczna'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SerwisAutaLecznaRouteImport } from './routes/serwis-auta-leczna'
 import { Route as MechanikLecznaRouteImport } from './routes/mechanik-leczna'
 import { Route as KlimatyzacjaLecznaRouteImport } from './routes/klimatyzacja-leczna'
 import { Route as IndexRouteImport } from './routes/index'
 
+const StacjaKontroliPojazdowLecznaRoute =
+  StacjaKontroliPojazdowLecznaRouteImport.update({
+    id: '/stacja-kontroli-pojazdow-leczna',
+    path: '/stacja-kontroli-pojazdow-leczna',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -47,6 +54,7 @@ export interface FileRoutesByFullPath {
   '/mechanik-leczna': typeof MechanikLecznaRoute
   '/serwis-auta-leczna': typeof SerwisAutaLecznaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/stacja-kontroli-pojazdow-leczna': typeof StacjaKontroliPojazdowLecznaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +62,7 @@ export interface FileRoutesByTo {
   '/mechanik-leczna': typeof MechanikLecznaRoute
   '/serwis-auta-leczna': typeof SerwisAutaLecznaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/stacja-kontroli-pojazdow-leczna': typeof StacjaKontroliPojazdowLecznaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,6 +71,7 @@ export interface FileRoutesById {
   '/mechanik-leczna': typeof MechanikLecznaRoute
   '/serwis-auta-leczna': typeof SerwisAutaLecznaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/stacja-kontroli-pojazdow-leczna': typeof StacjaKontroliPojazdowLecznaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -71,6 +81,7 @@ export interface FileRouteTypes {
     | '/mechanik-leczna'
     | '/serwis-auta-leczna'
     | '/sitemap.xml'
+    | '/stacja-kontroli-pojazdow-leczna'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -78,6 +89,7 @@ export interface FileRouteTypes {
     | '/mechanik-leczna'
     | '/serwis-auta-leczna'
     | '/sitemap.xml'
+    | '/stacja-kontroli-pojazdow-leczna'
   id:
     | '__root__'
     | '/'
@@ -85,6 +97,7 @@ export interface FileRouteTypes {
     | '/mechanik-leczna'
     | '/serwis-auta-leczna'
     | '/sitemap.xml'
+    | '/stacja-kontroli-pojazdow-leczna'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -93,10 +106,18 @@ export interface RootRouteChildren {
   MechanikLecznaRoute: typeof MechanikLecznaRoute
   SerwisAutaLecznaRoute: typeof SerwisAutaLecznaRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  StacjaKontroliPojazdowLecznaRoute: typeof StacjaKontroliPojazdowLecznaRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/stacja-kontroli-pojazdow-leczna': {
+      id: '/stacja-kontroli-pojazdow-leczna'
+      path: '/stacja-kontroli-pojazdow-leczna'
+      fullPath: '/stacja-kontroli-pojazdow-leczna'
+      preLoaderRoute: typeof StacjaKontroliPojazdowLecznaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -141,6 +162,7 @@ const rootRouteChildren: RootRouteChildren = {
   MechanikLecznaRoute: MechanikLecznaRoute,
   SerwisAutaLecznaRoute: SerwisAutaLecznaRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  StacjaKontroliPojazdowLecznaRoute: StacjaKontroliPojazdowLecznaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
