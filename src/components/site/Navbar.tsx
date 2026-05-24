@@ -104,11 +104,18 @@ export function Navbar() {
         {open && (
           <div className="lg:hidden border-t border-border/60 bg-background/95 backdrop-blur-xl">
             <nav className="px-6 py-6 flex flex-col gap-4">
-              {links.map((l) => (
-                <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-base text-foreground/90">
-                  {l.label}
-                </a>
-              ))}
+              {links.map((l) =>
+                "to" in l ? (
+                  <Link key={l.to} to={l.to} onClick={() => setOpen(false)} className="text-base text-foreground/90">
+                    {l.label}
+                  </Link>
+                ) : (
+                  <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-base text-foreground/90">
+                    {l.label}
+                  </a>
+                ),
+              )}
+
               <a href="tel:+48817521644" className="mt-2 inline-flex items-center gap-2 bg-gradient-red text-primary-foreground px-5 py-3 rounded-md text-sm font-medium w-fit">
                 <Phone className="size-4" /> 81 752 16 44
               </a>
