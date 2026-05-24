@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as MechanikLecznaRouteImport } from './routes/mechanik-leczna'
+import { Route as KlimatyzacjaLecznaRouteImport } from './routes/klimatyzacja-leczna'
 import { Route as IndexRouteImport } from './routes/index'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -23,6 +24,11 @@ const MechanikLecznaRoute = MechanikLecznaRouteImport.update({
   path: '/mechanik-leczna',
   getParentRoute: () => rootRouteImport,
 } as any)
+const KlimatyzacjaLecznaRoute = KlimatyzacjaLecznaRouteImport.update({
+  id: '/klimatyzacja-leczna',
+  path: '/klimatyzacja-leczna',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -31,30 +37,39 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/klimatyzacja-leczna': typeof KlimatyzacjaLecznaRoute
   '/mechanik-leczna': typeof MechanikLecznaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/klimatyzacja-leczna': typeof KlimatyzacjaLecznaRoute
   '/mechanik-leczna': typeof MechanikLecznaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/klimatyzacja-leczna': typeof KlimatyzacjaLecznaRoute
   '/mechanik-leczna': typeof MechanikLecznaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/mechanik-leczna' | '/sitemap.xml'
+  fullPaths: '/' | '/klimatyzacja-leczna' | '/mechanik-leczna' | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/mechanik-leczna' | '/sitemap.xml'
-  id: '__root__' | '/' | '/mechanik-leczna' | '/sitemap.xml'
+  to: '/' | '/klimatyzacja-leczna' | '/mechanik-leczna' | '/sitemap.xml'
+  id:
+    | '__root__'
+    | '/'
+    | '/klimatyzacja-leczna'
+    | '/mechanik-leczna'
+    | '/sitemap.xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  KlimatyzacjaLecznaRoute: typeof KlimatyzacjaLecznaRoute
   MechanikLecznaRoute: typeof MechanikLecznaRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
@@ -75,6 +90,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MechanikLecznaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/klimatyzacja-leczna': {
+      id: '/klimatyzacja-leczna'
+      path: '/klimatyzacja-leczna'
+      fullPath: '/klimatyzacja-leczna'
+      preLoaderRoute: typeof KlimatyzacjaLecznaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -87,6 +109,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  KlimatyzacjaLecznaRoute: KlimatyzacjaLecznaRoute,
   MechanikLecznaRoute: MechanikLecznaRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
