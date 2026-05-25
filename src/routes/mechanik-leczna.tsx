@@ -60,7 +60,7 @@ const services = [
   { icon: Wrench, t: "Naprawy mechaniczne", d: "Silnik, skrzynia biegów, układ napędowy, sprzęgło, rozrząd — pełen zakres napraw mechanicznych dla aut osobowych i dostawczych." },
   { icon: Cpu, t: "Diagnostyka komputerowa", d: "Odczyt błędów ze sterowników silnika, ABS, ESP, poduszek powietrznych. Profesjonalne testery dla wszystkich marek." },
   { icon: Disc, t: "Hamulce i zawieszenie", d: "Wymiana tarcz, klocków, amortyzatorów, wahaczy, tulei i drążków. Bezpieczeństwo Twoje i pasażerów to nasz priorytet." },
-  { icon: Gauge, t: "Opony i geometria", d: "Zapewniamy montaż opon oraz ustawienie geometrii kół, wyważanie i sezonową wymianę." },
+  { icon: Gauge, t: "Opony i geometria", d: "Zapewniamy montaż opon oraz ustawienie geometrii kół. Obsługujemy auta osobowe i dostawcze." },
 ];
 
 const faqs = [
