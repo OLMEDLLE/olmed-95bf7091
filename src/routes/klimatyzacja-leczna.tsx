@@ -8,7 +8,7 @@ import { Snowflake, Wind, Droplet, ShieldCheck, CheckCircle2 } from "lucide-reac
 
 const URL = "https://olmed.lovable.app/klimatyzacja-leczna";
 const TITLE = "Klimatyzacja Łęczna – Serwis Klimatyzacji Samochodowej OLMED";
-const DESC = "Klimatyzacja samochodowa w Łęcznej. OLMED Medyńscy – nabijanie, odgrzybianie, naprawa klimatyzacji od 149 zł. Szybki termin. Rynek II 17, tel. 81 752 16 44.";
+const DESC = "Klimatyzacja samochodowa w Łęcznej. OLMED Medyńscy – nabijanie, odgrzybianie i naprawa klimatyzacji. Krótkie terminy. Rynek II 17, tel. 81 752 16 44.";
 
 export const Route = createFileRoute("/klimatyzacja-leczna")({
   component: Page,
