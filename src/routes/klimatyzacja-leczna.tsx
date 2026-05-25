@@ -8,7 +8,7 @@ import { Snowflake, Wind, Droplet, ShieldCheck, CheckCircle2 } from "lucide-reac
 
 const URL = "https://olmed.lovable.app/klimatyzacja-leczna";
 const TITLE = "Klimatyzacja Łęczna – Serwis Klimatyzacji Samochodowej OLMED";
-const DESC = "Klimatyzacja samochodowa w Łęcznej. OLMED Medyńscy – nabijanie, odgrzybianie, naprawa klimatyzacji od 149 zł. Szybki termin. Rynek II 17, tel. 81 752 16 44.";
+const DESC = "Klimatyzacja samochodowa w Łęcznej. OLMED Medyńscy – nabijanie, odgrzybianie i naprawa klimatyzacji. Krótkie terminy. Rynek II 17, tel. 81 752 16 44.";
 
 export const Route = createFileRoute("/klimatyzacja-leczna")({
   component: Page,
@@ -59,7 +59,7 @@ const steps = [
 ];
 
 const faqs = [
-  { q: "Ile kosztuje nabicie klimatyzacji w Łęcznej?", a: "W OLMED Łęczna nabicie klimatyzacji samochodowej (czynnik R134a) startuje od 149 zł. Klimatyzacja z czynnikiem R1234yf to koszt od 349 zł. Diagnostyka szczelności w cenie." },
+  { q: "Czy trzeba umawiać się na serwis klimatyzacji?", a: "Telefoniczna rezerwacja pod numerem 81 752 16 44 gwarantuje szybki termin — szczególnie wiosną, kiedy chętnych jest najwięcej." },
   { q: "Jak często serwisować klimatyzację w aucie?", a: "Zalecamy serwis klimatyzacji raz w roku — najlepiej wiosną. Co 2 lata warto wykonać odgrzybianie, aby pozbyć się bakterii z parownika." },
   { q: "Czy odgrzybiacie klimatyzację ozonem?", a: "Tak, w naszym serwisie w Łęcznej wykonujemy odgrzybianie klimatyzacji ozonem oraz ultradźwiękowe — skuteczne i bezpieczne metody usuwania zapachów." },
   { q: "Naprawiacie sprężarki klimatyzacji?", a: "Tak — diagnozujemy i wymieniamy sprężarki, skraplacze, parowniki oraz przewody klimatyzacji we wszystkich markach aut." },
@@ -74,7 +74,7 @@ function Page() {
         <SubPageHeader
           eyebrow="Klimatyzacja samochodowa · Łęczna"
           title="Serwis klimatyzacji samochodowej w Łęcznej – OLMED"
-          lead="Nabijanie, odgrzybianie i naprawa klimatyzacji samochodowej w Łęcznej. Obsługujemy czynniki R134a i R1234yf, wszystkie marki aut osobowych i dostawczych. Krótkie terminy, uczciwa cena, gwarancja jakości."
+          lead="Nabijanie, odgrzybianie i naprawa klimatyzacji samochodowej w Łęcznej. Obsługujemy czynniki R134a i R1234yf, wszystkie marki aut osobowych i dostawczych. Krótkie terminy i gwarancja jakości."
         />
 
         <section className="py-16 lg:py-20">
@@ -90,8 +90,7 @@ function Page() {
               <p>
                 Pracujemy na nowoczesnych stacjach do obsługi klimatyzacji obsługujących oba popularne
                 czynniki chłodnicze — starszy <strong>R134a</strong> oraz nowy ekologiczny <strong>R1234yf</strong> stosowany
-                w autach od 2017 roku. Każde nabijanie poprzedzamy testem szczelności, abyś nie płacił
-                za czynnik, który wycieknie po tygodniu.
+                w autach od 2017 roku. Każde nabijanie poprzedzamy testem szczelności układu.
               </p>
 
               <h3 className="font-display text-2xl font-bold text-foreground pt-4">Jak wygląda serwis klimatyzacji w OLMED?</h3>
@@ -105,14 +104,15 @@ function Page() {
                 ))}
               </div>
 
-              <h3 className="font-display text-2xl font-bold text-foreground pt-4">Cennik klimatyzacji – Łęczna (od)</h3>
+              <h3 className="font-display text-2xl font-bold text-foreground pt-4">Zakres serwisu klimatyzacji w OLMED</h3>
               <ul className="space-y-3">
                 {[
-                  "Nabijanie klimatyzacji R134a – od 149 zł",
-                  "Nabijanie klimatyzacji R1234yf – od 349 zł",
-                  "Odgrzybianie ozonem – od 80 zł",
-                  "Wymiana filtra kabinowego – od 30 zł (+ filtr)",
-                  "Test szczelności układu – w cenie nabijania",
+                  "Nabijanie klimatyzacji czynnikiem R134a",
+                  "Nabijanie klimatyzacji czynnikiem R1234yf",
+                  "Odgrzybianie ozonem oraz ultradźwiękowe",
+                  "Wymiana filtra kabinowego",
+                  "Test szczelności układu klimatyzacji",
+                  "Naprawa sprężarek, skraplaczy, parowników i przewodów",
                 ].map((t) => (
                   <li key={t} className="flex items-start gap-3">
                     <CheckCircle2 className="size-5 text-primary shrink-0 mt-0.5" />
@@ -120,7 +120,8 @@ function Page() {
                   </li>
                 ))}
               </ul>
-              <p className="text-sm">Ceny orientacyjne — finalny koszt zależy od modelu auta i ilości czynnika. Zadzwoń po dokładną wycenę.</p>
+              <p className="text-sm">Po dokładną wycenę dla Twojego auta zadzwoń pod numer 81 752 16 44.</p>
+
 
               <h3 className="font-display text-2xl font-bold text-foreground pt-4">Klimatyzacja samochodowa – Łęczna i okolice</h3>
               <p>

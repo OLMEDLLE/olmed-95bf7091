@@ -8,7 +8,7 @@ const services = [
   { icon: Snowflake, title: "Serwis klimatyzacji", desc: "Nabijanie, odgrzybianie i pełna obsługa układów chłodzenia kabiny." },
   { icon: Disc, title: "Hamulce i zawieszenie", desc: "Diagnostyka, regeneracja i wymiana podzespołów odpowiedzialnych za bezpieczeństwo." },
   { icon: Package, title: "Części samochodowe", desc: "Sklep z częściami markowych producentów — dostępne od ręki." },
-  { icon: CircleDot, title: "Opony", desc: "Zapewniamy montaż." },
+  { icon: CircleDot, title: "Opony i geometria", desc: "Zapewniamy montaż opon oraz ustawienie geometrii kół." },
   { icon: Truck, title: "Pomoc drogowa", desc: "Holowanie i transport pojazdów — szybka reakcja na terenie Łęcznej i okolic." },
   { icon: ClipboardCheck, title: "Przeglądy techniczne", desc: "Kompleksowe przygotowanie auta do każdego rodzaju badania." },
   { icon: ShieldCheck, title: "Stacja Kontroli Pojazdów", desc: "Okręgowa SKP — pełen zakres badań na nowoczesnym sprzęcie." },

@@ -55,7 +55,7 @@ export const Route = createFileRoute("/stacja-kontroli-pojazdow-leczna")({
 });
 
 const faqs = [
-  { q: "Ile kosztuje przegląd rejestracyjny w Łęcznej?", a: "Przegląd samochodu osobowego do 3,5 t kosztuje 149 zł. Dodatkowo: instalacja LPG (63 zł), hak (21 zł), motocykl (63 zł). Cennik zgodny z taryfą ustawową." },
+  { q: "Jakie badania wykonuje OSKP OLMED w Łęcznej?", a: "Wykonujemy badania techniczne samochodów osobowych, dostawczych do 3,5 t, motocykli, przyczep oraz dodatkowe badania pojazdów z instalacją LPG i hakiem holowniczym." },
   { q: "Czy trzeba umawiać się na przegląd?", a: "Nie jest to wymagane, ale telefoniczna rezerwacja (518 518 315) gwarantuje szybką obsługę bez kolejki." },
   { q: "Co zabrać na przegląd techniczny?", a: "Dowód rejestracyjny pojazdu. W przypadku auta zarejestrowanego za granicą – dodatkowo tłumaczenie i dokumenty homologacji." },
   { q: "Jakie pojazdy badacie?", a: "Wszystkie kategorie: samochody osobowe, dostawcze do 3,5 t, motocykle, przyczepy, pojazdy z instalacją LPG oraz hakiem holowniczym." },
@@ -80,19 +80,18 @@ function Page() {
               <p>
                 <strong>OSKP OLMED</strong> w Łęcznej to nowoczesna Okręgowa Stacja Kontroli Pojazdów wyposażona
                 w pełną linię diagnostyczną. Badamy samochody osobowe, dostawcze do 3,5 tony, motocykle,
-                przyczepy oraz pojazdy z instalacją LPG i hakiem. Krótkie kolejki, profesjonalna obsługa
-                i ceny zgodne z taryfą ustawową.
+                przyczepy oraz pojazdy z instalacją LPG i hakiem. Krótkie kolejki i profesjonalna obsługa.
               </p>
 
               <h3 className="font-display text-2xl font-bold text-foreground pt-4">Zakres badań technicznych</h3>
               <ul className="space-y-3">
                 {[
-                  "Badanie techniczne okresowe samochodu osobowego – 149 zł",
-                  "Badanie samochodu dostawczego do 3,5 t – 149 zł",
-                  "Badanie motocykla – 63 zł",
-                  "Badanie przyczepy lekkiej do 750 kg – 78 zł",
-                  "Dodatkowe badanie instalacji LPG – 63 zł",
-                  "Dodatkowe badanie haka holowniczego – 21 zł",
+                  "Badanie techniczne okresowe samochodu osobowego",
+                  "Badanie samochodu dostawczego do 3,5 t",
+                  "Badanie motocykla",
+                  "Badanie przyczepy lekkiej do 750 kg",
+                  "Dodatkowe badanie instalacji LPG",
+                  "Dodatkowe badanie haka holowniczego",
                   "Badanie po wypadku, ponowne badanie techniczne, badanie pojazdu zabytkowego",
                 ].map((t) => (
                   <li key={t} className="flex items-start gap-3">

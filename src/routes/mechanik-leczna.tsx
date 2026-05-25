@@ -60,13 +60,13 @@ const services = [
   { icon: Wrench, t: "Naprawy mechaniczne", d: "Silnik, skrzynia biegów, układ napędowy, sprzęgło, rozrząd — pełen zakres napraw mechanicznych dla aut osobowych i dostawczych." },
   { icon: Cpu, t: "Diagnostyka komputerowa", d: "Odczyt błędów ze sterowników silnika, ABS, ESP, poduszek powietrznych. Profesjonalne testery dla wszystkich marek." },
   { icon: Disc, t: "Hamulce i zawieszenie", d: "Wymiana tarcz, klocków, amortyzatorów, wahaczy, tulei i drążków. Bezpieczeństwo Twoje i pasażerów to nasz priorytet." },
-  { icon: Gauge, t: "Geometria i opony", d: "Profesjonalne ustawienie geometrii kół, wyważanie, sezonowa wymiana opon i ich przechowywanie." },
+  { icon: Gauge, t: "Opony i geometria", d: "Zapewniamy montaż opon oraz ustawienie geometrii kół, wyważanie i sezonową wymianę." },
 ];
 
 const faqs = [
   { q: "Gdzie znajdę najlepszego mechanika w Łęcznej?", a: "Serwis OLMED przy Rynku II 17 w Łęcznej działa od 25 lat. Rodzina Medyńskich osobiście pilnuje jakości każdej naprawy." },
   { q: "Czy naprawiacie wszystkie marki samochodów?", a: "Tak — obsługujemy auta osobowe i dostawcze wszystkich marek europejskich, azjatyckich i amerykańskich." },
-  { q: "Ile kosztuje diagnostyka komputerowa w Łęcznej?", a: "Podstawowa diagnostyka komputerowa w OLMED Łęczna to koszt od 80 zł. Przy zleceniu naprawy diagnostyka często jest darmowa." },
+  { q: "Czy wykonujecie geometrię kół i wymianę opon?", a: "Tak — zapewniamy montaż opon oraz profesjonalne ustawienie geometrii kół. Obsługujemy auta osobowe i dostawcze." },
   { q: "Czy obsługujecie kierowców spoza Łęcznej?", a: "Tak, przyjmujemy klientów z całego powiatu łęczyńskiego i województwa lubelskiego — m.in. Łuszczów, Milejów, Puchaczów, Cyców, Spiczyn." },
 ];
 

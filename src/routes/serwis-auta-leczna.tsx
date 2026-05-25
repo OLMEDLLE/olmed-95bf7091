@@ -88,7 +88,7 @@ function Page() {
               <h3 className="font-display text-2xl font-bold text-foreground pt-4">Oryginalne części i markowe oleje</h3>
               <p>
                 Jesteśmy autoryzowanym partnerem <strong>O.K. Serwis</strong> – ogólnopolskiej sieci niezależnych
-                warsztatów oferującej jakość porównywalną z ASO przy niższych cenach. Stosujemy oryginalne
+                warsztatów oferującej jakość porównywalną z ASO. Stosujemy oryginalne
                 oleje <strong>ELF</strong> i <strong>ORLEN</strong> dopasowane do specyfikacji silnika.
               </p>
 
