@@ -90,8 +90,7 @@ function Page() {
               <p>
                 Pracujemy na nowoczesnych stacjach do obsługi klimatyzacji obsługujących oba popularne
                 czynniki chłodnicze — starszy <strong>R134a</strong> oraz nowy ekologiczny <strong>R1234yf</strong> stosowany
-                w autach od 2017 roku. Każde nabijanie poprzedzamy testem szczelności, abyś nie płacił
-                za czynnik, który wycieknie po tygodniu.
+                w autach od 2017 roku. Każde nabijanie poprzedzamy testem szczelności układu.
               </p>
 
               <h3 className="font-display text-2xl font-bold text-foreground pt-4">Jak wygląda serwis klimatyzacji w OLMED?</h3>
