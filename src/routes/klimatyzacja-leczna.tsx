@@ -74,7 +74,7 @@ function Page() {
         <SubPageHeader
           eyebrow="Klimatyzacja samochodowa · Łęczna"
           title="Serwis klimatyzacji samochodowej w Łęcznej – OLMED"
-          lead="Nabijanie, odgrzybianie i naprawa klimatyzacji samochodowej w Łęcznej. Obsługujemy czynniki R134a i R1234yf, wszystkie marki aut osobowych i dostawczych. Krótkie terminy, uczciwa cena, gwarancja jakości."
+          lead="Nabijanie, odgrzybianie i naprawa klimatyzacji samochodowej w Łęcznej. Obsługujemy czynniki R134a i R1234yf, wszystkie marki aut osobowych i dostawczych. Krótkie terminy i gwarancja jakości."
         />
 
         <section className="py-16 lg:py-20">
