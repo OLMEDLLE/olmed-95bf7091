@@ -104,14 +104,15 @@ function Page() {
                 ))}
               </div>
 
-              <h3 className="font-display text-2xl font-bold text-foreground pt-4">Cennik klimatyzacji – Łęczna (od)</h3>
+              <h3 className="font-display text-2xl font-bold text-foreground pt-4">Zakres serwisu klimatyzacji w OLMED</h3>
               <ul className="space-y-3">
                 {[
-                  "Nabijanie klimatyzacji R134a – od 149 zł",
-                  "Nabijanie klimatyzacji R1234yf – od 349 zł",
-                  "Odgrzybianie ozonem – od 80 zł",
-                  "Wymiana filtra kabinowego – od 30 zł (+ filtr)",
-                  "Test szczelności układu – w cenie nabijania",
+                  "Nabijanie klimatyzacji czynnikiem R134a",
+                  "Nabijanie klimatyzacji czynnikiem R1234yf",
+                  "Odgrzybianie ozonem oraz ultradźwiękowe",
+                  "Wymiana filtra kabinowego",
+                  "Test szczelności układu klimatyzacji",
+                  "Naprawa sprężarek, skraplaczy, parowników i przewodów",
                 ].map((t) => (
                   <li key={t} className="flex items-start gap-3">
                     <CheckCircle2 className="size-5 text-primary shrink-0 mt-0.5" />
@@ -119,7 +120,8 @@ function Page() {
                   </li>
                 ))}
               </ul>
-              <p className="text-sm">Ceny orientacyjne — finalny koszt zależy od modelu auta i ilości czynnika. Zadzwoń po dokładną wycenę.</p>
+              <p className="text-sm">Po dokładną wycenę dla Twojego auta zadzwoń pod numer 81 752 16 44.</p>
+
 
               <h3 className="font-display text-2xl font-bold text-foreground pt-4">Klimatyzacja samochodowa – Łęczna i okolice</h3>
               <p>
