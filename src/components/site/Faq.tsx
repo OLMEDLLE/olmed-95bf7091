@@ -11,8 +11,8 @@ export const faqItems = [
     a: "OSKP OLMED mieści się przy ul. Krasnystawskiej 54 w Łęcznej. Stacja jest czynna od poniedziałku do piątku w godzinach 7:00–19:00 oraz w soboty 7:00–14:00. Kontakt: 518 518 315.",
   },
   {
-    q: "Ile kosztuje przegląd rejestracyjny samochodu osobowego?",
-    a: "Cena podstawowego przeglądu rejestracyjnego samochodu osobowego do 3,5 t wynosi 149 zł. Dodatkowe badania (np. instalacja LPG, hak) płatne są wg cennika dostępnego w stacji.",
+    q: "Jakie pojazdy badacie w OSKP w Łęcznej?",
+    a: "Wykonujemy badania techniczne samochodów osobowych i dostawczych do 3,5 t, motocykli, przyczep, pojazdów z instalacją LPG oraz hakiem holowniczym. Szczegóły uzyskasz pod numerem 518 518 315.",
   },
   {
     q: "Jakie marki samochodów obsługujecie?",
