@@ -59,7 +59,7 @@ const steps = [
 ];
 
 const faqs = [
-  { q: "Ile kosztuje nabicie klimatyzacji w Łęcznej?", a: "W OLMED Łęczna nabicie klimatyzacji samochodowej (czynnik R134a) startuje od 149 zł. Klimatyzacja z czynnikiem R1234yf to koszt od 349 zł. Diagnostyka szczelności w cenie." },
+  { q: "Czy trzeba umawiać się na serwis klimatyzacji?", a: "Telefoniczna rezerwacja pod numerem 81 752 16 44 gwarantuje szybki termin — szczególnie wiosną, kiedy chętnych jest najwięcej." },
   { q: "Jak często serwisować klimatyzację w aucie?", a: "Zalecamy serwis klimatyzacji raz w roku — najlepiej wiosną. Co 2 lata warto wykonać odgrzybianie, aby pozbyć się bakterii z parownika." },
   { q: "Czy odgrzybiacie klimatyzację ozonem?", a: "Tak, w naszym serwisie w Łęcznej wykonujemy odgrzybianie klimatyzacji ozonem oraz ultradźwiękowe — skuteczne i bezpieczne metody usuwania zapachów." },
   { q: "Naprawiacie sprężarki klimatyzacji?", a: "Tak — diagnozujemy i wymieniamy sprężarki, skraplacze, parowniki oraz przewody klimatyzacji we wszystkich markach aut." },
