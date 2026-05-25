@@ -80,19 +80,18 @@ function Page() {
               <p>
                 <strong>OSKP OLMED</strong> w Łęcznej to nowoczesna Okręgowa Stacja Kontroli Pojazdów wyposażona
                 w pełną linię diagnostyczną. Badamy samochody osobowe, dostawcze do 3,5 tony, motocykle,
-                przyczepy oraz pojazdy z instalacją LPG i hakiem. Krótkie kolejki, profesjonalna obsługa
-                i ceny zgodne z taryfą ustawową.
+                przyczepy oraz pojazdy z instalacją LPG i hakiem. Krótkie kolejki i profesjonalna obsługa.
               </p>
 
               <h3 className="font-display text-2xl font-bold text-foreground pt-4">Zakres badań technicznych</h3>
               <ul className="space-y-3">
                 {[
-                  "Badanie techniczne okresowe samochodu osobowego – 149 zł",
-                  "Badanie samochodu dostawczego do 3,5 t – 149 zł",
-                  "Badanie motocykla – 63 zł",
-                  "Badanie przyczepy lekkiej do 750 kg – 78 zł",
-                  "Dodatkowe badanie instalacji LPG – 63 zł",
-                  "Dodatkowe badanie haka holowniczego – 21 zł",
+                  "Badanie techniczne okresowe samochodu osobowego",
+                  "Badanie samochodu dostawczego do 3,5 t",
+                  "Badanie motocykla",
+                  "Badanie przyczepy lekkiej do 750 kg",
+                  "Dodatkowe badanie instalacji LPG",
+                  "Dodatkowe badanie haka holowniczego",
                   "Badanie po wypadku, ponowne badanie techniczne, badanie pojazdu zabytkowego",
                 ].map((t) => (
                   <li key={t} className="flex items-start gap-3">
