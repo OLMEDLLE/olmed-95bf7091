@@ -11,7 +11,7 @@ const top = [
   {
     icon: Snowflake,
     title: "Klimatyzacja samochodowa Łęczna",
-    desc: "Nabijanie, odgrzybianie i kompleksowy serwis klimatyzacji w aucie — szybko i w cenie od 149 zł.",
+    desc: "Nabijanie, odgrzybianie i kompleksowy serwis klimatyzacji w aucie — szybki termin i fachowa diagnoza.",
     to: "/klimatyzacja-leczna",
   },
   {
