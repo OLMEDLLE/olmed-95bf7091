@@ -55,7 +55,7 @@ export const Route = createFileRoute("/stacja-kontroli-pojazdow-leczna")({
 });
 
 const faqs = [
-  { q: "Ile kosztuje przegląd rejestracyjny w Łęcznej?", a: "Przegląd samochodu osobowego do 3,5 t kosztuje 149 zł. Dodatkowo: instalacja LPG (63 zł), hak (21 zł), motocykl (63 zł). Cennik zgodny z taryfą ustawową." },
+  { q: "Jakie badania wykonuje OSKP OLMED w Łęcznej?", a: "Wykonujemy badania techniczne samochodów osobowych, dostawczych do 3,5 t, motocykli, przyczep oraz dodatkowe badania pojazdów z instalacją LPG i hakiem holowniczym." },
   { q: "Czy trzeba umawiać się na przegląd?", a: "Nie jest to wymagane, ale telefoniczna rezerwacja (518 518 315) gwarantuje szybką obsługę bez kolejki." },
   { q: "Co zabrać na przegląd techniczny?", a: "Dowód rejestracyjny pojazdu. W przypadku auta zarejestrowanego za granicą – dodatkowo tłumaczenie i dokumenty homologacji." },
   { q: "Jakie pojazdy badacie?", a: "Wszystkie kategorie: samochody osobowe, dostawcze do 3,5 t, motocykle, przyczepy, pojazdy z instalacją LPG oraz hakiem holowniczym." },
